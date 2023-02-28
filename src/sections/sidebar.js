@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function Sidebar(){
     return(
        
-        <div className="bg-blackLight  w-40 rounded-xl overflow-clip">
+        <div className="bg-blackLight  w-[207px] h-[603px] rounded-xl overflow-clip">
             <ul>
                 <li className="flex group items-center p-2 relative hover:cursor-pointer"> 
                     <FontAwesomeIcon 

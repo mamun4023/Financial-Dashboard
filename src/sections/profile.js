@@ -1,5 +1,5 @@
 
-import { faUsers } from "@fortawesome/free-solid-svg-icons"
+import { faList12, faListAlt, faMessage, faUsers } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
@@ -8,7 +8,7 @@ import ProfileImage from '../assets/images/jpg/profilePic.jpeg'
 
 export default function Profile(){
     return(
-        <div className="bg-blackLight w-60 p-10 rounded-xl overflow-clip mx-4 ">
+        <div className="bg-blackLight w-[326px] p-10 rounded-xl overflow-clip mx-4 ">
             <div className=" flex justify-center"> 
             <img 
                 src= {ProfileImage}
@@ -17,59 +17,61 @@ export default function Profile(){
             </div>
            
             <div className="m-4"> 
-                <h4 className="text-white font-poppins_600 text-center">Emmy Dansom</h4>
-                <p className="text-sm text-center text-white opacity-40 font-poppins_400"> CEO </p>
+                <h4 className="text-white text-[16px] font-poppins_600 text-center">Emmy Dansom</h4>
+                <p className="text-[12px] text-center text-white opacity-40 font-poppins_400"> CEO </p>
             </div>
 
             <div className="flex justify-center">
                 <div
-                    className=" bg-info rounded-xl p-2 px-4 m-2"
+                    className=" bg-info rounded-xl px-10 w-[70px] h-[59px] relative"
                 >
                     <FontAwesomeIcon 
-                        icon={faUsers}
-                        className = "text-white  "
+                        icon={faUsers }
+                        className = "text-white text-xl absolute top-5 left-7"
                     />
                 </div>
                 <div
-                    className=" bg-info rounded-xl p-2 px-4 m-2"
+                    className=" bg-info rounded-xl px-10 w-[70px] h-[59px] relative mx-2"
                 >
                     <FontAwesomeIcon 
-                        icon={faUsers}
-                        className = "text-white  "
+                        icon={faMessage}
+                        className = "text-white text-xl absolute top-5 left-7"
                     />
                 </div>
                 <div
-                    className=" bg-info rounded-xl p-2 px-4 m-2"
+                    className=" bg-info rounded-xl px-10 w-[70px] h-[59px] relative"
                 >
                     <FontAwesomeIcon 
-                        icon={faUsers}
-                        className = "text-white "
+                        icon={faListAlt  }
+                        className = "text-white text-xl absolute top-5 left-7"
                     />
                 </div>
-                
+
+               
+               
             </div>
             {/* bar */}
-            <div className="text-white h-[1px] bg-white my-10 opacity-40">
+            <div className="text-white h-[1px] w-full bg-white my-10 opacity-40">
 
             </div>
 
             <div>
-                <h6 className="text-white my-2">About</h6>
-                <p className="text-white text-xs opacity-40">Organized activites to make money and sell goods and services for a profit</p>
+                <h6 className="text-white my-2 font-poppins_600 text-[14px]">About</h6>
+                <p className="text-white text-[12px] font-poppins_500 opacity-40 leading-6">Organized activites to make money and sell goods and services for a profit</p>
             </div>
 
             {
                 Data.map(data=>(
-                    <div className="flex my-4">
+                    <div className="flex my-8 items-center">
                        <div className=" ">
                             <img 
                                 src= {data.profilePic}
-                                className = "w-10 h-10 rounded-full"
+                                className = "w-[54px] h-[54px] rounded-full"
                             />
                        </div>
                        <div className="pl-4">
-                            <h5 className="text-white">{data.name}</h5>
-                            <p className="text-xs text-white opacity-40"> {data.title} </p>
+                            <h5 className="text-white font-poppins_600 text-[14px]">{data.name}</h5>
+                            <p className="text-[12px] font-poppins_400 text-white opacity-40"> {data.title} </p>
                         </div> 
                     </div>
                 ))

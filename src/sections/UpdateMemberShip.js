@@ -5,7 +5,7 @@ import React from "react"
 
 export default function UpgradeMembership(){
     return(
-        <div className="bg-blackLight w-40 p-4 rounded-xl my-4 ">
+        <div className="bg-blackLight w-[207px] h-[209px] p-4 rounded-xl my-4 ">
             <div className="flex justify-center"> 
                 <div 
                     style={{background:'linear-gradient(102.27deg, #915D3F 0%, #633F91 100%)'}}
