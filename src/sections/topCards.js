@@ -4,7 +4,7 @@ import SpinerChart from '../components/spinerChart';
 
 export default function CardSection() {
     return (
-        <div className="p-2">
+        <div className="my-4">
             <div className="flex justify-between">
                 <div
                     style={{
@@ -22,7 +22,7 @@ export default function CardSection() {
                         </p>
                     </div>
                     <div className="text-white p-4">
-                        <SpinerChart width={200} />
+                        <SpinerChart width={200} data={30} />
                     </div>
                 </div>
                 <div
@@ -30,7 +30,7 @@ export default function CardSection() {
                         background:
                             'linear-gradient(279.13deg, #F362EE -9.54%, #8B28BA 151.3%)'
                     }}
-                    className="rounded-lg shadow-md flex items-center w-[389px] h-[152px]"
+                    className="rounded-lg shadow-md ml-4 flex items-center w-[389px] h-[152px]"
                 >
                     <div className="p-10 ">
                         <p className="text-white font-poppins_600 text-[14px] py-2">
@@ -41,7 +41,7 @@ export default function CardSection() {
                         </p>
                     </div>
                     <div className="text-white p-4">
-                        <SpinerChart width={200} />
+                        <SpinerChart width={200} data={40} />
                     </div>
                 </div>
             </div>

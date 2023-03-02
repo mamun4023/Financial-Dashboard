@@ -16,7 +16,7 @@ export default function Home() {
                     <Sidebar />
                     <UpgradeMembership />
                 </div>
-                <div>
+                <div className="mx-4">
                     <SearchBar />
                     <TopCard />
                     <Chart />

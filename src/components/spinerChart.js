@@ -36,14 +36,14 @@ var options = {
     labels: ['']
 };
 
-export default function SpinnerChart({ width }) {
+export default function SpinnerChart({ width, data }) {
     return (
         <div className="app">
             <div className="row">
                 <div className="mixed-chart">
                     <Chart
                         options={options}
-                        series={[20]}
+                        series={[data]}
                         type="radialBar"
                         width={width}
                     />

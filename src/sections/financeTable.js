@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function FinanceTable() {
     const [open, setOpen] = useState(false);
     return (
-        <div className=" bg-blackLight text-white h-[355px] p-4 py-8 m-2 rounded-lg">
+        <div className=" bg-blackLight text-white h-[334px] p-4 pt-6  my-4 rounded-lg">
             <h4 className="font-poppins_600 text-[14px] ">Project Finance</h4>
 
-            <div className="p-8">
-                <table className="text-left w-[700px]">
+            <div className="pt-6 flex justify-center">
+                <table className="text-left w-[750px]">
                     <thead className="">
                         <tr className="opacity-40 font-poppins_500 text-[12px]">
                             <th className="w-40">Name</th>
